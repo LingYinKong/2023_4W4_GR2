@@ -1,0 +1,9 @@
+a {
+    color: cornsilk;
+    &:visited {
+        color: #8a2be2;
+    }
+    &:hover {
+        color: bisque;
+    }
+}
