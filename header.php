@@ -9,8 +9,8 @@
 <?php wp_head(); ?>
 <body>
     <header>
-        <h3>- <?php echo bloginfo('name') ?></h3>
-        <h3>- <?php echo bloginfo('description') ?></h3>
-        <h3>- <?php echo bloginfo('url') ?></h3>
+        <?php wp_nav_menu(array(
+            "menu" => "principal"
+        )) ?>
         <h1><a href="<?php echo bloginfo('url') ?>"><?php echo bloginfo('name') ?></a> - <?php echo bloginfo('description') ?></h1>
     </header>
