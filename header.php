@@ -9,5 +9,8 @@
 <?php wp_head(); ?>
 <body>
     <header>
-        <h1>4W4-Création et développement Web</h1>
+        <h3>- <?php echo bloginfo('name') ?></h3>
+        <h3>- <?php echo bloginfo('description') ?></h3>
+        <h3>- <?php echo bloginfo('url') ?></h3>
+        <h1><a href="<?php echo bloginfo('url') ?>"><?php echo bloginfo('name') ?></a> - <?php echo bloginfo('description') ?></h1>
     </header>
