@@ -10,7 +10,8 @@
 <body>
     <header>
         <?php wp_nav_menu(array(
-            "menu" => "principal"
+            "menu" => "principal",
+            "container" => "nav"
         )) ?>
         <h1><a href="<?php echo bloginfo('url') ?>"><?php echo bloginfo('name') ?></a> - <?php echo bloginfo('description') ?></h1>
     </header>

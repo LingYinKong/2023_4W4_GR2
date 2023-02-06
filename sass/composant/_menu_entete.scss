@@ -1,0 +1,15 @@
+.menu-entete-container {
+    .menu {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+
+        .menu-item {
+            color: aquamarine;
+            a{
+                display: block;
+            }
+        }
+    }
+
+}
