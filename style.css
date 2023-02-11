@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-Theme Name: 2023-4w4-Ling Yin Kong
-Theme URI: https://referenced.ca
+Theme Name: 2023 4w4 Ling Yin Kong
+Theme URI: https://github.com/LingYinKong/2023_4W4_GR2
 Author: Ling Yin Kong
-Author URI: https://github.com/LingYinKong/2023_4W4_GR2
+Author URI: https://github.com/LingYinKong
 Description: Thème de base qui nous permettra d'apprendre les rudiments de la création de thèeme
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
 Version: 1.0
@@ -321,8 +321,14 @@ template {
 }
 
 /* --------------------------------------------- base */
+/*
+css font-size clamp generator *
+
+https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjQwMHB4IiwibWF4V2lkdGgiOiIyNjAwcHgiLCJtaW5Gb250U2l6ZSI6IjE2cHgiLCJtYXhGb250U2l6ZSI6IjcwcHgifQ%3D%3D
+
+*/
 h1 {
-  font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
+  font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
 }
 
 h2 {
@@ -366,7 +372,50 @@ h6 {
 }
 
 p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  /*
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;*/
+  font-family: "Times New Roman", Times, serif;
 }
 
-/* --------------------------------------------- composant *//*# sourceMappingURL=style.css.map */
+a {
+  color: rgb(76, 88, 135);
+}
+a:visited {
+  color: rgb(76, 135, 104);
+}
+a:hover {
+  color: rgb(211, 28, 28);
+}
+
+/* --------------------------------------------- composant */
+.site__footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.site__footer section {
+  border: 1px solid #aaa;
+  flex: 1 1 200px;
+}
+
+.site__header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* -------------------------------------------------- menu-enetete */
+.menu-entete-container .menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+.menu-entete-container .menu .menu-item {
+  color: rgb(0, 42, 85);
+}
+.menu-entete-container .menu .menu-item a {
+  display: block;
+  padding: 5px 20px;
+}/*# sourceMappingURL=style.css.map */

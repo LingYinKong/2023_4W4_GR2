@@ -3,8 +3,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    section {
-        border: 1px solid springgreen;
-        flex: 1 1 200px;
-    }
+
+}
+
+.site__footer section {
+    border : 1px solid #aaa;
+    flex : 1 1  200px;
 }

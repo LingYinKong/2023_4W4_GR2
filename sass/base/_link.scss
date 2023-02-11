@@ -1,9 +1,12 @@
 a {
-    color: cornsilk;
-    &:visited {
-        color: #8a2be2;
-    }
-    &:hover {
-        color: bisque;
-    }
+
+color : rgb(76, 88, 135);
+
+&:visited {
+    color : rgb(76, 135, 104);
+}
+&:hover {
+    color : rgb(211, 28, 28);
+}
+
 }
