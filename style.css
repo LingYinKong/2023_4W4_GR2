@@ -321,12 +321,20 @@ template {
 }
 
 /* --------------------------------------------- base */
+body {
+  background-color: rgb(241, 240, 212);
+}
+
 /*
 css font-size clamp generator *
 
 https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjQwMHB4IiwibWF4V2lkdGgiOiIyNjAwcHgiLCJtaW5Gb250U2l6ZSI6IjE2cHgiLCJtYXhGb250U2l6ZSI6IjcwcHgifQ%3D%3D
 
 */
+header {
+  background-color: rgb(59, 26, 74);
+}
+
 h1 {
   font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
 }
@@ -379,19 +387,19 @@ p {
 }
 
 a {
-  color: rgb(76, 88, 135);
+  color: rgb(63, 5, 91);
 }
 a:visited {
-  color: rgb(76, 135, 104);
+  color: rgb(117, 76, 135);
 }
 a:hover {
-  color: rgb(211, 28, 28);
+  color: rgb(81, 7, 118);
 }
 
 /* --------------------------------------------- composant */
 .site__footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -404,6 +412,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 }
 
 /* -------------------------------------------------- menu-enetete */
