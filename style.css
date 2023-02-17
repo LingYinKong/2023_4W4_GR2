@@ -396,6 +396,17 @@ a:hover {
   color: rgb(143, 56, 186);
 }
 
+ul {
+  list-style-type: none;
+}
+
+li::before {
+  content: "✦";
+  border-radius: 1ch;
+  padding-inline: 1ch;
+  margin-inline-end: 1ch;
+}
+
 /* --------------------------------------------- composant */
 .site__footer {
   display: flex;
@@ -418,15 +429,14 @@ a:hover {
 /* -------------------------------------------------- menu-enetete */
 .menu-entete-container .menu {
   display: flex;
-  list-style-type: none;
   justify-content: flex-end;
-}
-.menu-entete-container .menu .menu-item {
-  color: rgb(0, 42, 85);
 }
 .menu-entete-container .menu .menu-item a {
   display: block;
   padding: 5px 20px;
+}
+.menu-entete-container .menu li::before {
+  content: "";
 }
 
 .blocflex {
