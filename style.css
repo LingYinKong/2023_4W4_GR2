@@ -426,6 +426,12 @@ li::before {
   padding: 1rem;
 }
 
+.logomenu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 /* -------------------------------------------------- menu-enetete */
 .menu-entete-container .menu {
   display: flex;
