@@ -322,7 +322,7 @@ template {
 
 /* --------------------------------------------- base */
 body {
-  background-color: rgb(241, 240, 212);
+  background-color: rgb(255, 248, 230);
 }
 
 /*
@@ -331,10 +331,6 @@ css font-size clamp generator *
 https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjQwMHB4IiwibWF4V2lkdGgiOiIyNjAwcHgiLCJtaW5Gb250U2l6ZSI6IjE2cHgiLCJtYXhGb250U2l6ZSI6IjcwcHgifQ%3D%3D
 
 */
-header {
-  background-color: rgb(59, 26, 74);
-}
-
 h1 {
   font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
 }
@@ -400,7 +396,7 @@ ul {
   list-style-type: none;
 }
 
-li::before {
+main li::before {
   content: "✦";
   border-radius: 1ch;
   padding-inline: 1ch;
@@ -452,6 +448,6 @@ li::before {
   margin: 2rem;
 }
 .blocflex article {
-  border: 1px solid #aaa;
+  border: 2px solid #545454;
   padding: 1rem;
 }/*# sourceMappingURL=style.css.map */

@@ -13,7 +13,7 @@ ul > li {}
 
 ol > li {}
 
-li::before {
+ main li::before {
     content: "✦";
     border-radius: 1ch;
     padding-inline: 1ch;
