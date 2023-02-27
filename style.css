@@ -383,13 +383,13 @@ p {
 }
 
 a {
-  color: rgb(63, 5, 91);
+  color: rgb(9, 30, 0);
 }
 a:visited {
-  color: rgb(138, 100, 154);
+  color: rgb(24, 108, 38);
 }
 a:hover {
-  color: rgb(143, 56, 186);
+  color: rgb(1, 168, 15);
 }
 
 ul {

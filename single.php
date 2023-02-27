@@ -6,7 +6,7 @@
 ?>
 <?php get_header(); ?>
 <main>
-<h3>single.php</h3>
+<code>single.php</code>
 <?php
     if (have_posts()): 
         while (have_posts()) : the_post();

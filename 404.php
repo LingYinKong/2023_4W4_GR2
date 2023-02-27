@@ -6,8 +6,8 @@
 ?>
 <?php get_header(); ?>
 <main>
-<h3>404.php</h3>
-<h1>Page non disponible</h1>
+<code>404.php</code>
+<h1>Page non disponible - Erreur 404</h1>
 </main>
 
 <?php get_footer(); ?>

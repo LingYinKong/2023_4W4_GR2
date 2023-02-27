@@ -2,12 +2,9 @@
 ## 4w4 - Conception d'interface et développement Web
 ### Auteur: Ling Yin Kong
 #### Description
-- Installation sur un serveur distant « siteground.com »
-- Développer les modules suivants:
-> header.php, front-page.php
-- Création de la branche exer1 
-- Compléter la codification sass
-- Améliorer le design global
+- Améliorer la classe .blocflex
+- Création du modèle category.php
+- Améliorer l'affichage des articles « markdown »
 
 #### Références
 - https://eddytuto.ca/

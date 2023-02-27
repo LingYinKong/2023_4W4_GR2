@@ -6,7 +6,7 @@
 ?>
 <?php get_header(); ?>
 <main>
-    <h3>front-page.php</h3>
+    <code>front-page.php</code>
     <section class="blocflex">
 <?php
     if (have_posts()): 
