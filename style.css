@@ -447,9 +447,24 @@ main li::before {
   gap: 2rem;
   margin: 2rem;
 }
-.blocflex article {
-  border: 2px solid #545454;
+
+.blocflex__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border: 1px solid black;
   padding: 1rem;
+}
+.blocflex__article h3, .blocflex__article h5, .blocflex__article h6, .blocflex__article p {
+  margin: 0;
+  padding: 0;
+}
+
+.blocflex__galerie {
+  display: flex;
+  flex: 1 0 100%;
 }
 
 /* --------------------------------------------- layout */

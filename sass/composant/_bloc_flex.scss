@@ -22,9 +22,23 @@
     // grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
     gap: 2rem;
     margin: 2rem;
-  
-    article {
-      border: 2px solid #545454;
-      padding: 1rem;
+}
+
+.blocflex__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    padding: 1rem;
+    h3, h5, h6, p {
+      margin: 0;
+      padding: 0;
     }
-  }
+}
+
+.blocflex__galerie {
+  display: flex;
+  flex: 1 0 100%;
+}
