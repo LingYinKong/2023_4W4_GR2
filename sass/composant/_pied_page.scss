@@ -1,12 +1,11 @@
 .site__footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-
+    border : 1px solid #aaa;
 
 }
 
 .site__footer section {
-    border : 1px solid #aaa;
     flex : 1 1  200px;
 }
