@@ -20,6 +20,8 @@
   .site__aside {
     grid-area: aside;
     background-color: rgb(151, 254, 130);
+    border-radius: 5px;
+    margin: 0.5rem;
   }
 
   .site {
