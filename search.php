@@ -13,7 +13,11 @@
       if (have_posts() ) :
          while (have_posts() ) : the_post(); ?>
          <?php
-          get_template_part('template-parts/search', '4w4'); ?>
+          $ma_categorie = "4w4";
+          if (in_category('cours')){
+              $ma_categorie = "cours";  
+          }    
+       get_template_part("template-parts/search", $ma_categorie); ?>
          <?php endwhile; ?>
       <?php endif;
       wp_reset_postdata();?>
