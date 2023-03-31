@@ -6,10 +6,10 @@ $duree = substr($titre, strpos($titre, '('));
 ?> 
 
 <article class="blocflex__search">  
-    <h3><a href="<?php the_permalink(); ?>"> <?= $sigle ?></a></h3>
-    <h5><?= $titre_long ?></h5>
-    <h3><?php the_field('enseignant') ?></h3>
-    <p><?php the_field('domaine') ?></p>
-    <p><?= wp_trim_words(get_the_excerpt()); ?></p>
+    <h5><a href="<?php the_permalink(); ?>"> <?= $sigle ?></a></h5>
+    <h6><?php the_field('enseignant') ?></h6>
+    <h6><?php the_field('domaine') ?></h6>
     <h5><?= $duree ?></h5>
+    <h5><?= $titre_long ?></h5>
+    <p><?= wp_trim_words(get_the_excerpt()); ?></p>
 </article>

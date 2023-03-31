@@ -443,7 +443,7 @@ li::before {
   transform: translateX(300px);
   transition: transform 0.5s;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .menu-entete-container {
     transform: translateX(0);
   }
@@ -455,7 +455,7 @@ li::before {
   align-items: flex-end;
   justify-content: flex-start;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .menu-entete-container .menu {
     flex-direction: row;
     align-items: center;
@@ -484,7 +484,7 @@ li::before {
   align-items: center;
   width: 25px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .burger {
     display: none;
   }
@@ -541,18 +541,37 @@ html {
 
 .blocflex__search {
   display: flex;
-  flex: 1 0 80%;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
+  flex: 1 0 90%;
+  flex-direction: column;
+  text-align: left;
   margin: 0.5rem;
-  border-radius: 5px;
+  padding: 1rem;
+  border-bottom: 1px solid #aaa;
 }
-.blocflex__search h3, .blocflex__search h5, .blocflex__search h6, .blocflex__search p {
+.blocflex__search h3, .blocflex__search h5, .blocflex__search h6 {
   margin: 0;
-  padding: 0;
+  padding: 1rem;
+  height: 5rem;
+  font-size: large;
+  background-color: #ffecce;
+}
+.blocflex__search p {
+  font-size: small;
+  width: 80%;
+  padding: 1rem;
+}
+@media screen and (min-width: 1000px) {
+  .blocflex__search {
+    flex-direction: row;
+  }
+  .blocflex__search h3, .blocflex__search h5, .blocflex__search h6 {
+    width: 20%;
+    height: 10rem;
+    font-size: x-large;
+  }
+  .blocflex__search p {
+    font-size: medium;
+  }
 }
 
 .menu-cours-container .menu {

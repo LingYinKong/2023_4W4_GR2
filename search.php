@@ -11,8 +11,7 @@
     <section class="blocflex">
       <?php
       if (have_posts() ) :
-         while (have_posts() ) : the_post(); 
-            the_title('<h4>','</h4>');?>
+         while (have_posts() ) : the_post(); ?>
          <?php
           get_template_part('template-parts/search', '4w4'); ?>
          <?php endwhile; ?>
