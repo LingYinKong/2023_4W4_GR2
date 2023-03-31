@@ -5,22 +5,22 @@
 .site__header {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color:rgba(255,255,255,.05);
+  background-color:rgb(255, 242, 213);
 }
 
 .site__main {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-  background-color: rgb(120, 151, 191);
+  background-color: rgb(255, 251, 232);
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: rgb(60 128 217);
+  background-color: rgb(255, 242, 213);
 }
 .site__aside {
   grid-area: aside;
-  background-color: rgb(170, 207, 240);
+  background-color: rgb(255, 251, 232);
 }
 
 .site {
@@ -32,7 +32,7 @@
     "main"
     "footer";
   // row-gap: 50px;
-  background-color:rgb(181, 212, 240);
+  background-color:rgb(255, 251, 232);
   @media screen and (min-width: $largeur__bureau) {
       grid-template-columns: 20% auto;
       grid-template-areas:
@@ -53,5 +53,8 @@
     "header"
     "main"
     "footer";
+}
+.site__aside {
+  display: none;
 }
 }
