@@ -539,6 +539,22 @@ html {
   margin: 0.5rem;
 }
 
+.blocflex__search {
+  display: flex;
+  flex: 1 0 80%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+.blocflex__search h3, .blocflex__search h5, .blocflex__search h6, .blocflex__search p {
+  margin: 0;
+  padding: 0;
+}
+
 .menu-cours-container .menu {
   display: flex;
   flex-direction: row;

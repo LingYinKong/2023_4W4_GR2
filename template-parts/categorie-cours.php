@@ -14,6 +14,6 @@ $duree = substr($titre, strpos($titre, '('));
     <h5><?= $titre_long ?></h5>
     <p><?= wp_trim_words(get_the_excerpt(), 15); ?></p>
     <h5><?= $duree ?></h5>
-    <p><?php //the_field('enseignant') ?></p>
-    <p><?php //the_field('domaine') ?></p>
+    <p><?php the_field('enseignant') ?></p>
+    <p><?php the_field('domaine') ?></p>
 </article>
