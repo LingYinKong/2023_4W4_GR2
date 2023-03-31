@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Modèle par défaut
@@ -5,7 +6,8 @@
  */
 ?>
 <?php get_header(); ?>
-<main>
+<main class="site__main">
+<h3>search.php</h3>
 <h3>Résultats de la recherche</h3>
 <?php
     if (have_posts()): 
