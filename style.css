@@ -565,8 +565,7 @@ html {
     flex-direction: row;
   }
   .blocflex__search h3, .blocflex__search h5, .blocflex__search h6 {
-    flex-direction: column;
-    padding: 0;
+    padding: 1rem;
     width: 20%;
     height: 10rem;
     font-size: x-large;
