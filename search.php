@@ -19,8 +19,7 @@
           }    
        get_template_part("template-parts/search", $ma_categorie); ?>
          <?php endwhile; ?>
-      <?php endif;
-      wp_reset_postdata();?>
+      <?php endif; ?>
    </section>
 </main>
 
