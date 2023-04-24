@@ -7,6 +7,12 @@
 <?php get_header(); ?>
 <main>
     <section class="blocflex">
+        <?php wp_nav_menu(array(
+            "menu" => "evenement",
+            "container" => "nav"
+        )); ?>
+    </section>
+    <section class="blocflex">
     <?php
         if (have_posts()): 
             while (have_posts()) : the_post(); 
