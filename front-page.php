@@ -6,11 +6,17 @@
 ?>
 <?php get_header(); ?>
 <main>
+    
     <section class="blocflex">
-        <?php wp_nav_menu(array(
-            "menu" => "evenement",
-            "container" => "nav"
-        )); ?>
+        <?php 
+        
+        wp_nav_menu(array(
+            "menu"=>"evenement",
+            "container"=>"nav"
+
+        ));
+       
+        ?>
     </section>
     <section class="blocflex">
     <?php
@@ -21,7 +27,6 @@
                         $ma_categorie = "galerie";  
                     }    
                  get_template_part("template-parts/categorie", $ma_categorie);
-      
              endwhile;
         endif;    
     ?>
