@@ -13,13 +13,16 @@
 
         
         <section class="bloc__viewport">    
-                 <?php wp_nav_menu(array(
+        <?php wp_nav_menu(array(
             "menu"=>"evenement",
             "container"=>"nav"
         )); ?>
-    <h2>Notre mission</h2>
-<?php wp_nav_menu(array(
+            <?php wp_nav_menu(array(
             "menu"=>"bloc-archive",
+            "container"=>"nav"
+        )); ?>
+        <?php wp_nav_menu(array(
+            "menu"=>"atelier",
             "container"=>"nav"
         )); ?>
         </section>
