@@ -1,23 +1,21 @@
-<?php
+<?php 
 /**
- * Modèle par défaut
- * 
+ * single.php est le modèle par défaut qui affiche un article
  */
 ?>
 <?php get_header(); ?>
-<main class="site__main">
-<h3>single.php</h3>
-<?php
-    if (have_posts()): 
-        while (have_posts()) : the_post();
-           
-            the_title('<h1>','</h1>');
-             the_post_thumbnail('thumbnail');  
-            the_content(); ?>
+    <main class="site__main">
+        <pre>single.php</pre>
+        <h1>Bienvenue sur 4W4</h1>
+    <?php if(have_posts()):
+            while (have_posts()): the_post(); ?>
+            <article class="article__single">                
+                <h3><?php  the_post_thumbnail('medium'); ?><?php the_title(); ?></h3>
+                <?php the_content(); ?>
+            </article>
             <hr>
-        <?php endwhile;
-    endif;
-?>
-</main>
-
-<?php get_footer(); ?>
+            <?php endwhile; ?>
+           <?php  endif; ?>
+    </main>
+    
+    <?php get_footer(); ?>

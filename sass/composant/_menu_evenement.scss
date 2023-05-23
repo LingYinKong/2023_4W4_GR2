@@ -1,54 +1,51 @@
-.menu-evenement-container,
-.menu-bloc-archive-container{ // nav
-    .menu {//ul
-        display: flex;
-        .menu-item { //li
+.menu-evenement-container, 
+.menu-bloc-archive-container {//nav
+    background-color: transparent;
+    .menu { // ul
+        display : flex;
+        justify-content: space-between;
+
+        .menu-item{ //li
             display : flex;
             flex-direction: column;
-            justify-content: space-between;
-            border : 3px solid #aaa;
-            background-color: rgba(255, 255,255, .5);
-            //height : 100px;
+            border : 2px solid #555;
+            flex : 1 0 200px;
+            height: auto;
             margin : 10px;
-            padding : 5px;
-            a {
+
+            a{
                 display : flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
                 text-align: center;
-
-               
-                .title {
-                    display : block;
-                    font-size: 2rem;
+                .title{
+                    font-size: 1.5rem;
                 }
                 .description{
-                    font-size: 1rem
+                    font-size:.8rem;
                 }
                 .menu-thumbnail{
                     display : block;
                     width : 150px;
-                    height: 150px;
+                    height : 150px;
                 }
             }
-
         }
     }
 }
 
-.menu-bloc-archive-container .menu .menu-item {
-        background-repeat: no-repeat;
-        display: block;
+.img__archive{
+   width :80%;
+   height: 50px;
+   object-fit: cover; 
+   background-repeat: no-repeat;
 }
 
-
-.bloc__cours  {
-    background-image: url('https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold');
-
+.archive__cours .img__archive {
+    background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
 }
 
-.bloc__4w4 {
-    background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=library');
-  
+.archive__4w4  .img__archive{
+    background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=briefcase");
 }
