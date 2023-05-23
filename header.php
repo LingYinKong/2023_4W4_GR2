@@ -13,9 +13,17 @@
     $nouvelle_classe = 'no-aside';
   }
 */
+$nouvelle_classe = "";
+if  (is_front_page() || 
+    (! in_category("cours") && ! in_category("4w4")) ){
+      $nouvelle_classe = 'no-aside';
+    }
+if (is_page_template('template-atelier.php')) {
+     $nouvelle_classe = '';
+}
 ?>
-<!-- body class="site  // $nouvelle_classe " -->
-<body class="custom-background  site <?php echo (is_front_page()?'no-aside':'');?>">
+<body class="site  <?php $nouvelle_classe ?> ">
+<!-- <body class="custom-background  site <?php //echo (is_front_page()?'no-aside':'');?>"> -->
 
    <header class="site__header">
     <section class="site__header__logo">
