@@ -1,6 +1,6 @@
 /*
 Theme Name: 2023 4w4 Ling Yin Kong
-Theme URI: https://github.com/LingYinKong/2023_4W4_GR2
+Theme URI: https://referenced.ca
 Author: Ling Yin Kong
 Author URI: https://github.com/LingYinKong
 Description: Thème de base qui nous permettra d'apprendre les rudiments de la création de thèeme
@@ -16,7 +16,7 @@ Text Domain: 2023-4w4
 
 
 @import "normalize/normalize";
-// @import "normalize/box-sizing";
+@import "normalize/boxsizing";
 
 @import "variables/root";
 
@@ -32,6 +32,7 @@ Text Domain: 2023-4w4
 @import "composant/site_entete";
 @import "composant/burger";
 @import "composant/bloc_flex";
+@import "composant/menu_evenement";
 @import "composant/aside_cours";
 
 /* --------------------------------------------- layout */
