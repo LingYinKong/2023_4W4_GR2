@@ -1,6 +1,25 @@
 .site__footer {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+
+
+}
+
+.site__footer section {
+    border : 1px solid #aaa;
+    flex : 1 1  200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site__footer section:nth-of-type(1){
+    flex : 0 0  200px;
+}
+.site__footer section:nth-of-type(2){
+    flex : 1 0  200px;
+}
+.site__footer section:nth-of-type(3){
+    flex : 1 0  200px;
 }

@@ -1,6 +1,8 @@
 /* --------------------------------------------------- Entete de la page */
 
-.site__header {}
+.site__header {
+    overflow-x: hidden ;
+}
 
 .site__header__logo {
     display: flex;
@@ -11,10 +13,9 @@
 
 .menu__recherche {
     display: flex;
-    justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column-reverse;
-    justify-content: center;;
+    justify-content: flex-start;
     @media screen and (min-width: $largeur__bureau) {
         flex-direction: row;
         align-items: center;
@@ -35,17 +36,20 @@
         transform : translateX(0);
     }
 
-    .menu{ // ul
+    #menu-entete { // ul
         display : flex;
+        position : absolute;
+        top:0;
+        right:0;
         flex-direction: column; 
         list-style-type: none;
         align-items: flex-end;
         justify-content: flex-start;
         @media screen and (min-width : $largeur__tablette ){
+        position : static;
            flex-direction: row; 
            align-items: center;
            justify-content: flex-end;
-
         }
         .menu-item { //li
             color : rgb(0, 42, 85);
@@ -56,7 +60,7 @@
             }
         }
     }
-    }
+}
 
 
     /* //////////////////////////////////////////// Zone de recherche */

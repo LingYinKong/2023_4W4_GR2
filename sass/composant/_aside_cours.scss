@@ -1,31 +1,38 @@
 .menu-cours-container { //nav
-    .menu { //ul
+ 
+    .menu { // ul
         display: flex;
         flex-direction: row;
-        justify-content: center;
         @media screen and (min-width: $largeur__bureau) {
-             flex-direction: column;
+            flex-direction: column;
         }
+
         .menu-item { //li
             display: flex;
             flex-direction: row;
             align-items: center;
-            a{
+            a {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
 
                 code{
-                    display: block;
+                    display : block;
                     white-space: nowrap;
                 }
                 p{
-                    display: none;
-                    @media screen and (min-width: $largeur__bureau) {
-                        display: block;
+                    display : none;
+                    @media screen and (min-width:$largeur__bureau) {
+                        display : block; 
+                        white-space: nowrap;
                     }
+
                 }
             }
+
         }
+
+
     }
+
 }

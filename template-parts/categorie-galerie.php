@@ -1,4 +1,3 @@
-
 <?php
 /**
  * template part pour afficher la galerie dans la page d'accueil

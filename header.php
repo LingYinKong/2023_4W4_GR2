@@ -15,7 +15,7 @@
 */
 ?>
 <!-- body class="site  // $nouvelle_classe " -->
-<body class="site <?php echo (is_front_page() || is_search()?'no-aside':'');?>">
+<body class="custom-background  site <?php echo (is_front_page()?'no-aside':'');?>">
 
    <header class="site__header">
     <section class="site__header__logo">
@@ -32,6 +32,7 @@
            
       </div>  
     </section>
+    <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
     <h2><?= bloginfo('description') ?></h2>
    </header>
 
